@@ -16,7 +16,7 @@ connectDB();
 
 const app = express();
 
-app.use(cors({ origin: 'https://ecommerce-frontend-ebon-nine.vercel.app/', credentials: true }));
+app.use(cors({ origin: 'https://ecommerce-frontend-ebon-nine.vercel.app', credentials: true }));
 app.use(express.json());
 
 app.use("/auth", authRoutes);
